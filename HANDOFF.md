@@ -4,28 +4,30 @@
 
 ---
 
-## 1. 프로젝트 개요 및 주요 링크
+## 1. 프로젝트 개요 및 실시간 접속 정보
 
-- **프로젝트명**: 피자스타트업 팀 소개 웹사이트
-- **목적**: 5인(남궁지영, 민아현, 윤서현, 이주현, 임다희)의 고유한 토핑과 개성을 피자 한 판의 조화로 표현하는 인터랙티브 웹사이트
-- **🌐 GitHub Pages 라이브 사이트**: [https://zhiying163-alt.github.io/pizza-startup/](https://zhiying163-alt.github.io/pizza-startup/)
-  - 팀원 소개 직통: [https://zhiying163-alt.github.io/pizza-startup/team/](https://zhiying163-alt.github.io/pizza-startup/team/)
-  - 프로젝트 소개 직통: [https://zhiying163-alt.github.io/pizza-startup/projects/](https://zhiying163-alt.github.io/pizza-startup/projects/)
-- **🐙 GitHub 원격 저장소**: [https://github.com/zhiying163-alt/pizza-startup](https://github.com/zhiying163-alt/pizza-startup)
+* **프로젝트명**: 피자스타트업 (Pizza Startup) 팀 소개 웹사이트
+* **기획 배경**: 5인(남궁지영, 민아현, 윤서현, 이주현, 임다희)의 고유한 토핑과 개성을 피자 한 판의 조화로 표현하는 인터랙티브 웹사이트
+* **🌐 GitHub Pages 라이브 사이트**: **[https://zhiying163-alt.github.io/pizza-startup/](https://zhiying163-alt.github.io/pizza-startup/)**
+  * 메인 홈페이지: [https://zhiying163-alt.github.io/pizza-startup/](https://zhiying163-alt.github.io/pizza-startup/)
+  * 팀원 소개 페이지 (완성본): [https://zhiying163-alt.github.io/pizza-startup/team/](https://zhiying163-alt.github.io/pizza-startup/team/)
+  * 프로젝트 소개 페이지 (준비 중): [https://zhiying163-alt.github.io/pizza-startup/projects/](https://zhiying163-alt.github.io/pizza-startup/projects/)
+* **🐙 GitHub 원격 저장소**: [https://github.com/zhiying163-alt/pizza-startup](https://github.com/zhiying163-alt/pizza-startup)
+* **💻 로컬 개발 서버**: `http://localhost:3000` (백그라운드 구동 중)
 
 ---
 
 ## 2. 기술 스택 (Tech Stack)
 
-| 분류 | 기술 / 라이브러리 | 용도 및 버전 |
+| 분류 | 기술 / 라이브러리 | 세부 정보 및 용도 |
 | :--- | :--- | :--- |
-| **Framework** | Next.js 16 (Turbopack, App Router) | 정적 웹 애플리케이션 프레임워크 (`output: 'export'`) |
-| **Language** | TypeScript 5, React 19 | 정적 타입 안정성 및 모던 컴포넌트 아키텍처 |
+| **Framework** | Next.js 16.3.5 (App Router) | 정적 웹 애플리케이션 프레임워크 (`output: 'export'`) |
+| **Language** | TypeScript 5.x, React 19.2.8 | 정적 타입 안정성 및 모던 컴포넌트 아키텍처 |
 | **Styling** | Tailwind CSS v4 | 유틸리티 퍼스트 스타일링 & 커스텀 키프레임 애니메이션 |
 | **Typography** | Google Fonts (`Jua`, `Gowun Dodum`) | 제목: 둥글고 귀여운 `Jua` / 본문: 부드러운 `Gowun Dodum` |
 | **Icons & Visuals**| Pure SVG Topping Icons, Lucide Icons | 이모지 없이 직접 구현한 수제 토핑 벡터 그래픽 및 UI 아이콘 |
 | **Interactions** | Canvas Confetti, Pure CSS & SVG Matrix | 피자 분리 모션, 치즈 스트레치 바운스, 토핑 유영 효과 |
-| **CI / CD** | GitHub Actions (`deploy.yml`) | `main` 브랜치 푸시 시 자동 빌드 및 GitHub Pages 배포 |
+| **CI / CD** | GitHub Actions (`.github/workflows/deploy.yml`) | `main` 브랜치 푸시 시 자동 빌드 및 GitHub Pages 배포 |
 
 ---
 
