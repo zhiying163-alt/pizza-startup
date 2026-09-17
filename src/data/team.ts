@@ -1,3 +1,5 @@
+export type ToppingType = "tomato" | "cheese" | "basil" | "olive" | "pepperoni";
+
 export interface TeamMember {
   id: string;
   name: string;
@@ -5,10 +7,10 @@ export interface TeamMember {
   bio: string;
   topping: string;
   toppingEnglish: string;
-  toppingEmoji: string;
+  toppingType: ToppingType;
   color: string;
   textColor: string;
-  avatarUrl?: string; // 프로필 사진 경로 (예: "/avatars/namgung.png")가 있으면 사진 노출, 없으면 원형 컬러 블록 노출
+  avatarUrl?: string;
   tagline: string;
   skills: string[];
 }
@@ -21,10 +23,10 @@ export const teamMembers: TeamMember[] = [
     bio: "한 줄 소개",
     topping: "토마토",
     toppingEnglish: "Tomato Red",
-    toppingEmoji: "🍅",
-    color: "#E63946",
+    toppingType: "tomato",
+    color: "#D9383A", // 따뜻한 토마토 레드
     textColor: "#FFFFFF",
-    avatarUrl: "", // 사진을 넣으시려면 여기에 이미지 경로를 입력하세요. 비어있으면 지정된 색상의 원형 블록이 표시됩니다.
+    avatarUrl: "",
     tagline: "피자의 깊은 베이스를 만드는 열정의 토마토",
     skills: ["기획", "열정", "베이스 구축"],
   },
@@ -35,9 +37,9 @@ export const teamMembers: TeamMember[] = [
     bio: "한 줄 소개",
     topping: "치즈",
     toppingEnglish: "Cheese Yellow",
-    toppingEmoji: "🧀",
-    color: "#FFB703",
-    textColor: "#1F2937",
+    toppingType: "cheese",
+    color: "#F5A623", // 진하고 고소한 치즈 옐로
+    textColor: "#2B1E16",
     avatarUrl: "",
     tagline: "모든 재료를 부드럽고 끈끈하게 이어주는 치즈",
     skills: ["조화", "유연성", "에너지"],
@@ -49,8 +51,8 @@ export const teamMembers: TeamMember[] = [
     bio: "한 줄 소개",
     topping: "바질",
     toppingEnglish: "Basil Green",
-    toppingEmoji: "🌿",
-    color: "#2A9D8F",
+    toppingType: "basil",
+    color: "#386641", // 신선하고 차분한 내추럴 바질 그린
     textColor: "#FFFFFF",
     avatarUrl: "",
     tagline: "풍미를 한 단계 끌어올리는 신선한 바질",
@@ -62,9 +64,10 @@ export const teamMembers: TeamMember[] = [
     role: "역할",
     bio: "한 줄 소개",
     topping: "올리브",
-    toppingEnglish: "Olive Purple",
-    toppingEmoji: "🫒",
-    color: "#7209B7",
+    toppingEnglish: "Olive Charcoal",
+    toppingType: "olive",
+    // 흔한 AI 사이트 보라색/네온색 대신 자연스럽고 깊은 풍미의 블랙 올리브 차콜 그린 사용
+    color: "#353B29", 
     textColor: "#FFFFFF",
     avatarUrl: "",
     tagline: "깊고 매력적인 풍미를 더해주는 블랙 올리브",
@@ -77,8 +80,8 @@ export const teamMembers: TeamMember[] = [
     bio: "한 줄 소개",
     topping: "페퍼로니",
     toppingEnglish: "Pepperoni Orange",
-    toppingEmoji: "🍕",
-    color: "#FB8500",
+    toppingType: "pepperoni",
+    color: "#C84B19", // 잘 구워진 페퍼로니 오렌지 레드
     textColor: "#FFFFFF",
     avatarUrl: "",
     tagline: "톡 쏘는 강렬함과 유쾌함을 선사하는 페퍼로니",

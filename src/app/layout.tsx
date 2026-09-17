@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FloatingToppings from "@/components/FloatingToppings";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,9 +17,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" className="h-full">
-      <body className="min-h-full flex flex-col bg-[#FBF6EE] text-[#2B1E16] antialiased selection:bg-[#FFB703] selection:text-[#2B1E16]">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="min-h-full flex flex-col bg-[#FBF6EE] text-[#2B1E16] antialiased selection:bg-[#F5A623] selection:text-[#2B1E16] relative">
+        {/* 배경에 은은하게 떠다니는 수제 토핑 (페퍼로니, 올리브, 바질) */}
+        <FloatingToppings />
+        
         <Header />
-        <main className="flex-1 flex flex-col">{children}</main>
+        <main className="flex-1 flex flex-col relative z-10">{children}</main>
         <Footer />
       </body>
     </html>
